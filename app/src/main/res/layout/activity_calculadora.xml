@@ -20,6 +20,55 @@
 
     <Space
         android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/btnC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:text="C"
+            android:textSize="22sp" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/btnDiv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:text="÷"
+            android:textSize="22sp" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/btnPor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:text="×"
+            android:textSize="22sp" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/btnBorrar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:text="DEL"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
         android:layout_height="30dp"/>
 
     <LinearLayout
@@ -27,6 +76,105 @@
         android:layout_height="wrap_content">
 
         <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/btnSiete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:text="7"
+            android:textSize="22sp" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/btnOcho"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:text="8"
+            android:textSize="22sp" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/btnNueve"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:text="9"
+            android:textSize="22sp" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/btnMenos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:text="-"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/btnCuatro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:text="4"
+            android:textSize="22sp" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/btnCinco"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:text="5"
+            android:textSize="22sp" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/btnSeis"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:text="6"
+            android:textSize="22sp" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/btnMas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:text="+"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
             android:id="@+id/btnUno"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -37,6 +185,7 @@
 
         <Button
             android:id="@+id/btnDos"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
@@ -45,6 +194,7 @@
             android:textSize="22sp" />
 
         <Button
+            style="?android:attr/buttonBarButtonStyle"
             android:id="@+id/btnTres"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -52,15 +202,48 @@
             android:layout_weight="1"
             android:text="3"
             android:textSize="22sp" />
-
         <Button
-            android:id="@+id/btnMas"
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/btnIgual"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
             android:layout_weight="1"
-            android:text="+"
+            android:text="="
             android:textSize="22sp" />
+
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/btnCero"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:text="0"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btnPunto"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:text="."
+            android:textSize="22sp" />
+
+
     </LinearLayout>
 
 
