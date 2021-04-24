@@ -1,6 +1,7 @@
 package com.example.taller1
 
 import androidx.appcompat.app.AppCompatActivity
+import java.util.ArrayList
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -27,6 +28,8 @@ class Calculadora : AppCompatActivity() {
     lateinit var btnPunto: Button
     lateinit var btnC: Button
     lateinit var btnBorrar: Button
+
+    lateinit var operacion: ArrayList<String>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -64,9 +67,6 @@ class Calculadora : AppCompatActivity() {
         btnTres.setOnClickListener {
             txtResultado.text = txtResultado.text as String + "3"
         }
-        btnMas.setOnClickListener {
-            txtResultado.text = txtResultado.text as String + "+"
-        }
         btnCuatro.setOnClickListener {
             txtResultado.text = txtResultado.text as String + "4"
         }
@@ -89,16 +89,47 @@ class Calculadora : AppCompatActivity() {
             txtResultado.text = txtResultado.text as String + "0"
         }
         btnMenos.setOnClickListener {
-            txtResultado.text = txtResultado.text as String + "-"
+            var actual: String = txtResultado.text as String
+            var valor = actual.substring(actual.length-1)
+            
+            revisarOperador("-",valor,actual)
         }
         btnPor.setOnClickListener {
-            txtResultado.text = txtResultado.text as String + "×"
+            var actual: String = txtResultado.text as String
+            var valor = actual.substring(actual.length-1)
+
+            revisarOperador("×",valor,actual)
+
         }
         btnDiv.setOnClickListener {
-            txtResultado.text = txtResultado.text as String + "÷"
+            var actual: String = txtResultado.text as String
+            var valor = actual.substring(actual.length-1)
+
+            revisarOperador("÷",valor,actual)
+
+        }
+
+        btnMas.setOnClickListener {
+            var actual: String = txtResultado.text as String
+            var valor = actual.substring(actual.length-1)
+
+            revisarOperador("+",valor,actual)
         }
         btnIgual.setOnClickListener {
-            txtResultado.text = txtResultado.text as String + "="
+            //txtResultado.text = txtResultado.text as String + "="
+            var actual: String = txtResultado.text as String
+            operacion = actual.split(" ") as ArrayList<String>
+
+            operacion.forEach{
+                val actual:String = "$it"
+                if(isOperator(actual)){
+                    when(actual){
+
+                    }
+                }else{
+
+                }
+            }
         }
         btnPunto.setOnClickListener {
             txtResultado.text = txtResultado.text as String + "."
@@ -112,5 +143,22 @@ class Calculadora : AppCompatActivity() {
             txtResultado.text = nuevo
         }
 
+    }
+
+    fun revisarOperador(operador:String,valor:String,actual:String){
+        if(valor == "+" || valor == "×" || valor == "÷" || valor == "-"){
+            var nuevo = actual.substring(0,actual.length-1)
+            nuevo += " $operador "
+            txtResultado.text = nuevo
+        }else{
+            txtResultado.text = txtResultado.text as String + " $operador "
+        }
+    }
+
+    fun isOperator(operador:String) : Boolean{
+        when (operador){
+            "+","×","÷","-" -> return true
+        }
+        return false
     }
 }

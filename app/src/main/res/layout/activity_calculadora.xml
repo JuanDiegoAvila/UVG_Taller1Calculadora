@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/black"
     tools:context=".Calculadora">
 
 
@@ -15,7 +16,7 @@
         android:layout_height="100dp"
         android:gravity="right|bottom"
         android:text="123"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         android:textSize="28sp" />
 
     <Space
@@ -27,7 +28,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            style="?android:attr/buttonBarButtonStyle"
+            android:backgroundTint="#439F9696"
             android:id="@+id/btnC"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -37,7 +38,7 @@
             android:textSize="22sp" />
 
         <Button
-            style="?android:attr/buttonBarButtonStyle"
+            android:backgroundTint="#439F9696"
             android:id="@+id/btnDiv"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -47,7 +48,7 @@
             android:textSize="22sp" />
 
         <Button
-            style="?android:attr/buttonBarButtonStyle"
+            android:backgroundTint="#439F9696"
             android:id="@+id/btnPor"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -57,7 +58,7 @@
             android:textSize="22sp" />
 
         <Button
-            style="?android:attr/buttonBarButtonStyle"
+            android:backgroundTint="#439F9696"
             android:id="@+id/btnBorrar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -76,7 +77,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            style="?android:attr/buttonBarButtonStyle"
+            android:backgroundTint="#43D31616"
             android:id="@+id/btnSiete"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -86,7 +87,7 @@
             android:textSize="22sp" />
 
         <Button
-            style="?android:attr/buttonBarButtonStyle"
+            android:backgroundTint="#43D31616"
             android:id="@+id/btnOcho"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -96,7 +97,7 @@
             android:textSize="22sp" />
 
         <Button
-            style="?android:attr/buttonBarButtonStyle"
+            android:backgroundTint="#43D31616"
             android:id="@+id/btnNueve"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -106,7 +107,7 @@
             android:textSize="22sp" />
 
         <Button
-            style="?android:attr/buttonBarButtonStyle"
+            android:backgroundTint="#439F9696"
             android:id="@+id/btnMenos"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -125,7 +126,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            style="?android:attr/buttonBarButtonStyle"
+            android:backgroundTint="#43D31616"
             android:id="@+id/btnCuatro"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -135,7 +136,7 @@
             android:textSize="22sp" />
 
         <Button
-            style="?android:attr/buttonBarButtonStyle"
+            android:backgroundTint="#43D31616"
             android:id="@+id/btnCinco"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -145,7 +146,7 @@
             android:textSize="22sp" />
 
         <Button
-            style="?android:attr/buttonBarButtonStyle"
+            android:backgroundTint="#43D31616"
             android:id="@+id/btnSeis"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -155,7 +156,7 @@
             android:textSize="22sp" />
 
         <Button
-            style="?android:attr/buttonBarButtonStyle"
+            android:backgroundTint="#439F9696"
             android:id="@+id/btnMas"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -174,7 +175,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            style="?android:attr/buttonBarButtonStyle"
+            android:backgroundTint="#43D31616"
             android:id="@+id/btnUno"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -184,8 +185,8 @@
             android:textSize="22sp" />
 
         <Button
+            android:backgroundTint="#43D31616"
             android:id="@+id/btnDos"
-            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
@@ -194,7 +195,7 @@
             android:textSize="22sp" />
 
         <Button
-            style="?android:attr/buttonBarButtonStyle"
+            android:backgroundTint="#43D31616"
             android:id="@+id/btnTres"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -203,7 +204,7 @@
             android:text="3"
             android:textSize="22sp" />
         <Button
-            style="?android:attr/buttonBarButtonStyle"
+            android:backgroundTint="#439F9696"
             android:id="@+id/btnIgual"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -224,7 +225,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            style="?android:attr/buttonBarButtonStyle"
+            android:backgroundTint="#43D31616"
             android:id="@+id/btnCero"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -234,8 +235,8 @@
             android:textSize="22sp" />
 
         <Button
+            android:backgroundTint="#43D31616"
             android:id="@+id/btnPunto"
-            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
