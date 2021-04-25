@@ -130,6 +130,32 @@ class Calculadora : AppCompatActivity() {
 
                 }
             }
+
+            val iterate = operacion.listIterator()
+            for(i in operacion.indices){
+                val actual:String = operacion[i]
+                if(isOperator(actual)){
+                    val operando1:Double = operacion[i-1].toDouble();
+                    val operando2:Double = operacion[i+1].toDouble();
+                    var resultado:Double = 0.0
+                    when(actual){
+                        "+" ->{resultado = operando1 + operando2}
+                        "×" ->{resultado = operando1 * operando2}
+                        "÷" ->{resultado = operando1 / operando2}
+                        "-" ->{resultado = operando1 - operando2}
+                    }
+
+                    operacion[i+1] = resultado.toString()
+                    //operacion.remove(actual)
+                    //operacion.removeAt(i-1)
+
+
+
+                }else{
+
+                }
+            }
+            txtResultado.text = operacion.get(operacion.lastIndex) as String
         }
         btnPunto.setOnClickListener {
             txtResultado.text = txtResultado.text as String + "."
