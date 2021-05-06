@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        Toast.makeText(this,"onCreate",Toast.LENGTH_SHORT).show()
+        //Toast.makeText(this,"onCreate",Toast.LENGTH_SHORT).show()
 
         val btnHello: Button = findViewById(R.id.btnHello)
 
@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+    /*
     override fun onStart() {
         super.onStart()
         Toast.makeText(this,"onStart",Toast.LENGTH_SHORT).show()
@@ -52,4 +53,6 @@ class MainActivity : AppCompatActivity() {
         super.onDestroy()
         Toast.makeText(this,"onDestroy",Toast.LENGTH_SHORT).show()
     }
+
+     */
 }

@@ -120,16 +120,6 @@ class Calculadora : AppCompatActivity() {
             var actual: String = txtResultado.text as String
             operacion = actual.split(" ") as ArrayList<String>
 
-            operacion.forEach{
-                val actual:String = "$it"
-                if(isOperator(actual)){
-                    when(actual){
-
-                    }
-                }else{
-
-                }
-            }
 
             val iterate = operacion.listIterator()
             for(i in operacion.indices){
